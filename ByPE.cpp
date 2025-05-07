@@ -1,0 +1,1 @@
+extern "C" __declspec(dllexport) void __stdcall IIIIII() { void* v; DWORD d; if ((v = GetModuleHandle(0)) && VirtualProtect(v, 0x1000, 0x40, &d)) memset(v, 0, 0x1000), VirtualProtect(v, 0x1000, d, &d); }
